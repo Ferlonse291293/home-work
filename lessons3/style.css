@@ -90,6 +90,7 @@ a p {
   font-weight: bold;
   color:white;
   margin:10px;
+  box-shadow:2px 5px 5px 1px grey;
   
  
   text-decoration: none;
@@ -98,7 +99,7 @@ a p {
 
 .date a:hover{
   background:rgba(62, 59, 74, 0.897);
-  
+  box-shadow:2px 5px 5px 1px blueviolet;
 
 }
 .past-future-day  a{
@@ -110,11 +111,13 @@ a p {
   color:rgb(128, 128, 128);
   margin:10px;
   text-decoration: none;
+  box-shadow:2px 5px 5px 1px grey;
 }
 
 .past-future-day  a:hover{
   background:rgba(62, 59, 74, 0.897);
   color:white;
+  box-shadow:2px 5px 5px 1px blueviolet;
 
 }
 
