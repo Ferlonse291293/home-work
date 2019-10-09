@@ -46,10 +46,10 @@ margin: 0 auto;
 .button-header{
   
     height:50px;
-    width:75%;
+    width:100%;
     margin: 0 auto;
     min-width: 400px;
-
+background: #575757;
 
 }
 
@@ -60,7 +60,7 @@ margin: 0 auto;
 .main-menu {
     display:flex;
     flex-direction: row;
-   width:60%;
+   width:600px;
    height:100%;
    margin:0;
    padding:0;
@@ -69,15 +69,15 @@ margin: 0 auto;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     list-style: none;
-    justify-content: space-between;
+    
     
   }
   
   .main-menu > li {
       position:relative;
-    display:inline-block;
-    width:100px;
-    margin-right:5px;
+    display:block;
+    width:150px;
+  
     
     height:100%;
     white-space:nowrap;
@@ -89,17 +89,17 @@ margin: 0 auto;
     
   display:block;
   width:100%;
-  height:auto;
-    color: #000000;
+  height:100%;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin:0;
     padding: 0;
-    padding: 16px 0px ;
+    padding: 16px 0 0 50px ;
     font-size: 14px;
    
   }
   .main-menu p{
- 
+  text-align: center;
 
   }
   
@@ -108,19 +108,22 @@ margin: 0 auto;
   }
   
   .main-menu .sub-menu {
-      width: 200px;
+      width: 150px;
       display: none;
     position:absolute;
+   top: 100%;
+   left:0;
     margin: 0;
     padding: 0;
     margin-top: -2px;
+    
     list-style: none;
-    background-color: #f8f8f8;
+    background-color: #575757;;
   }
   
   .main-menu .sub-menu a {
    
-   padding: 15px 0 15px 40px;
+   padding: 15px 0 15px 30px;
    
 
     
@@ -129,11 +132,12 @@ margin: 0 auto;
   
   .main-menu > li:hover .sub-menu {
     display: block;
-    border: 1px solid #efefef;
+    border: 1px solid rgb(94, 191, 255);
     border-radius: 2px;
+    box-shadow: 2px 3px 3px 1px rgb(94, 191, 255);
   }
   .main-menu > li:hover .sub-menu li:hover {
-    background:white;
+    background:#ffffff;
     
     
   }
@@ -164,4 +168,3 @@ background: blue;
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Eater&display=swap&subset=latin-ext');
