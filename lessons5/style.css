@@ -27,6 +27,7 @@ background:green;
 }
 
 .content{
+    overflow: hidden;
     flex: 1 0 auto;
     position:relative;
     z-index: 1;
@@ -95,7 +96,7 @@ animation-name: drive,fly;
         width:40px;
         height: auto;
         animation-name: fly2;
-    animation-duration: 180s;
+    animation-duration: 120s;
     animation-iteration-count: inherit;
 
     }
@@ -151,7 +152,36 @@ animation-name: drive,fly;
 
 
     /* идиот*/
+    .img5{
+        position: absolute;
+        right:-200px;
+        bottom:-10px;
+        z-index: 10;
+        width:200px;
+        height: auto;
+        animation-name: fly4;
+    animation-duration: 15s;
+    animation-iteration-count: inherit;
+    }
+        @keyframes fly4{
+        
+            0%{
+                transform: translateX(1px);
+            }
+            
 
+            50%{
+                transform: translateX(1px);
+            }
+            
+            80%{
+                transform: translateX(-190px);
+            }
+           
+            100%{
+                transform: translateX(1px);
+            }
+        }
 
 
 /*облако*/
@@ -159,12 +189,12 @@ animation-name: drive,fly;
 .img6{
     position: absolute;
     left:200px;
-    top:140px;
+    top:120px;
     z-index: 1;
     width:50px;
     height: auto;
     animation-name: fly3;
-animation-duration: 120s;
+animation-duration: 180s;
 animation-iteration-count: inherit;
 }
     @keyframes fly3{
