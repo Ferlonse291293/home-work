@@ -1,0 +1,53 @@
+.top-border{
+    width: 750px;
+    border: 1px solid black;
+    padding: 6px;
+}
+table{
+    padding: 0;
+    margin: 0;
+}
+th,
+td{
+    padding: 0;
+    margin: 0;
+}
+
+.products{
+    border: 2px solid black;
+}
+.col1{
+    height: 20px;
+}
+.col2{
+    height: 40px;
+}
+.row1{
+    width:140px;
+}
+.row2{
+    width:80px;
+}
+.row3{
+    width:70px;
+}
+
+.bor1{
+    border-bottom: 2px solid black;
+}
+.bor2{
+    border-left: 2px solid black;
+}
+.bor3{
+    border-top: 1px solid black;
+}
+.bor4 {
+    border-top: 1px solid black; 
+}
+.bor5{
+    border-left: 1px solid black; 
+}
+.bor6{
+    border-bottom: 1px solid black ;
+    border-top: 1px solid black ;
+}
