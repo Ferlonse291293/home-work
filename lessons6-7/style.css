@@ -1,50 +1,62 @@
 @font-face {
   font-family: 'poe_sans_proregular';
-  src: url('18011-webfont.woff2') format('woff2');
+  src: url('fonts/18011-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 
 }
 
+
+
 html{
-  height: 100%;
+  
   width:100%;
 }
 body{
+  position: relative;
   margin: 0;
   padding: 0;
   height:100%;
   width:100%;
-  display: flex;
-  flex-direction: column;
+  
+}
+
+.wraper-header{
+width:100%;
+min-height: 65px;
+background: rgb(49,88,143) ;
 }
 
 .header{
-  display: flex;
-  flex-direction: row;
-  background: rgb(49,88,143) ;
   flex: 0 0 auto;
+  margin: 0 auto;
   min-height: 65px;
-  width:100%;
+  width: 1200px;
+  
  
 }
 .logo{
+  float: left;
   width:100px;
   height: 100%;
-  padding-left: 20px;
-
+  margin-right: 100px;
+  
+  
 }
 /* стили меню кнопок*/
 .header .main-button{
-  min-width: 600px;
+
+  float:left;
+ 
+  
+  
   width: 800px;
   height: 45px;
 
-  margin: 0 auto;
+ 
   margin-top: 10px;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
+ 
 }
 
 .main-button .button1,
@@ -53,6 +65,11 @@ body{
 .button4{
   margin-right:10px;
 }
+.main-button a{
+  float: left;
+}
+
+
 
 
 /* before button*/
@@ -165,37 +182,40 @@ width:150px;
 
 
 .get-out{
+  float: right;
+  position: relative;
   width:100px;
   height: 100%;
 
 
 }
 .get-out img{
-  margin:20px 0 0 50px;
+  position: absolute;
+  top:16px;
+  right: 0;
 }
 
 
 .wraper{
-
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   flex:1 0 auto;
  
 }
 
 .main{
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
+ 
+  width: 1200px;
   height: 100%;
-  margin: 0 auto;
+  margin:0 auto;
 
 
 }
 
 .sidebar{
-  display: flex;
-  flex-direction: column;
-min-width: 250px;
-max-width: 250px;
+ float: left;
+width: 250px;
 height: 100%;
 margin: 10px 10px;
 
@@ -213,8 +233,8 @@ box-shadow:
      0 0 1px 1px rgba(0,1,6,.2);
     
 min-height: 280px;
-max-height: 280px;;
-border-radius: 3px;;
+max-height: 280px;
+border-radius: 3px;
 padding: 5px;
 margin-bottom: 10px;
 }
@@ -285,10 +305,11 @@ a.button-download-documents:hover:not(:active) {
 
 
 .content{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 600px;
+  float: right;
+  
+  
+  width:920px;
+  
   
   height: 100%;
   margin-top:10px;
@@ -420,9 +441,11 @@ background-position: 50% 30%;
 
 
 .scroling-items{
-  display: flex;
-  flex-direction: row;
+  
   width:100%;
+}
+.scroling-items>*{
+  float: left;
 }
 
 
@@ -470,8 +493,23 @@ height: 300px;
 
 
 footer{
+  
   min-height: 50px;;
-  background: rgb(49,88,143);
+ 
 
 }
 
+.wraper-footer{
+  background: rgb(49,88,143);
+  width: 100%;
+  position: relative;
+   bottom:0; 
+   left:0;}
+
+
+
+*::after{
+  content: "";
+  display:table;
+  clear:both;
+}
