@@ -493,8 +493,9 @@ height: 300px;
 
 
 footer{
-  
-  min-height: 50px;;
+  width:1200px;
+  margin:0 auto;
+  min-height: 50px;
  
 
 }
