@@ -192,13 +192,18 @@ for(let i=0;i<weak2.length;i++){
   
 }
 
+// Дано число n=1000 . Делите его на 2пока результат деления не станет меньше 50.Каое число получится?
+// Посчитайте количество интераций и запишите в переменную num(num3);
+
 let numberDelate = 1000;
 let num3 = 0;
-for(let i=1000;i>50;i){
+for(let i=numberDelate;numberDelate>50;i++){
+  numberDelate/=2;
 num3+=1;
 
 }
 
+console.log(numberDelate);
 console.log(num3);
 
 
