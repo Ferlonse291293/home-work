@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <!--
+        Типы устройств
+        all - все типы (по-умолчанию)
+        screen - все устройства с экранами
+        3d-glasses - 3д очки
+        print - устройства печати
+        speech - устройства с синтезатором речи.
+
+        Характеристики носителей
+        (width) - ширина области видимости
+        (height)
+        (min-width) - Стили будут работать начиная с ширины указанной для него
+        (max-width) - Стили будут работать до ширины указаной для него
+        (min-height)
+        (max-height)
+        Поддерживают px \ em \ rem
+
+        (aspect-ratio) - соотношение ширины и высоты области просмотра
+        Например: (aspect-ratio: 16/9)
+        (min-aspect-ratio)
+        (max-aspect-ratio)
+
+        (orientation) - проверяет ориентацию области просмотра
+        Бывает portrait \ landscape (портретная \ альбомная)
+
+        (resolution) - проверяет разрешение экрана (количество пикселей или точек 
+        на дюйм)
+        Например (resolution: 300dpi)
+        (min-resolution)
+        (max-resolution)
+
+        (color) - проверяет битность устройства вывода (экрана).
+        Например: (color: 4) - 4 битная глубина цвета экрана
+        (min-color)
+        (max-color)
+
+        (color-index) - проверяет количество поддерживаемых цветов экраном.
+        Например: (color-index: 256)
+        (min-color-index)
+        (max-color-index)
+
+        (monochrome) - проверяет количество бит на пиксель монохромного устройства
+        Например: (monochrome: 8)
+        (min-monochrome)
+        (max-monochrome)
+
+        (-webkit-device-pixel-ratio) - проверяет количество физических пикселей на 
+        каждый css-пиксель
+        Например: (-webkit-device-pixel-ratio: 2)
+
+        Логические операторы
+
+        Оператор and (И)
+        Позволяет связать друг с другом разные условия
+        @media screen and (max-width: 500px)
+
+        Оператор запятая (ИЛИ)
+        Позволяет сделать сразу несколько проверок
+        @media screen, 3d-glasses
+
+        Оператор not
+        Оператор позволяет сработать запросу в противоположном случае
+        @media not all and (monochrome)
+        Это аналогично записи @media not (screen and (monochrome))
+
+        Оператор only
+        Используется как хук для того чтобы стили не работали в старых браузерах.
+        @media only screen and (min-width: 1000px)
+
+        
+
+        Разрешения под которые нужно адаптировать
+        1200px+ - десктопные экраны
+        1024px - планшеты - горизонтальная ширина
+        768px - планшеты - вертикальная ширина
+        320px - мобильные начиная как минимум с iphone 5
+
+    -->
+
+
+    <div class="box">
+sdfsfsdfsdfsdfsdf
+    </div>
+   <!-- <script type="text/javascript">
+        document.oncontextmenu = function (){return false};
+     </script>-->
+
+     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAARCAYAAADZsVyDAAABZklEQVQ4jb2Uv07DMBDGv9AujFnZmqUPEEYYLDkj3tqRkT4CeYRmhC08QtkitlrKC5QVqQNR36ArG+jKZ+H8IU0lxCdFsZ3c7+5s3wUYIKVNCGAJQN5ZaYtXfK/LWkzCorRF5Whnx7BKmwjABsAdgBmAtdJG87NANZ/It+sFE7BpGIWE37cMhoCVNhLhmiBRCiABsOd8yUg71QlW2uQAck73BFYEXXLcq3EDKNGtvEgEMOfeutRjOsobEYc+a+RBY6buTtkS+gDg1rOR/b6RW8BsrriuJ9G02lXbN5kEhM4YgfOaAXiio9ppe9rTscvSSa5jGjD9dw+64Basmun9opTZ+QedjHbV9mMSTV1K1wAuCD3v5rSkCZyT8VLa4rFVeUqbz5bpMCWlLaz7czzQSEr4meOYt6RXg8GlLTL8VONRcGeB/IX+Fex6wamq2XXtsfSCZlEc+q9ITl5pIyVdC8b16IMAfAHJQl353koJEwAAAABJRU5ErkJggg==">
+</body>
+</html>

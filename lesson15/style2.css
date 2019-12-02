@@ -1,0 +1,12 @@
+.box {
+  color: red;
+}
+
+.box .box-item {
+  font-size: 20px;
+}
+
+h1 {
+  color: blue;
+}
+/*# sourceMappingURL=style2.css.map */

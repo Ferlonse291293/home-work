@@ -1,0 +1,153 @@
+.products{
+    border-collapse: collapse;
+    /* отключает расстояние между ячейками */
+
+    /* border-spacing: 10px; - расстояние между ячейками */
+
+    width: 600px;
+}
+
+.products caption{
+    caption-side: bottom;
+}
+
+.products tbody tr:nth-child(1) td:nth-child(1){ /* тоже самое что :first-child */
+    border-right: 0;
+}
+
+.products tbody tr:nth-child(1) td:nth-child(2){
+    border-left: 0;
+}
+
+.products td{
+    padding: 15px;
+}
+
+
+/* Рамки */
+
+.border{
+    width: 400px;
+    height: 300px;
+    background: purple;
+
+    border: 4px solid red;
+
+    border-width: 10px; /* толщина рамки */
+    border-style: dotted; /* стиль рамки */
+    border-color: blue; /* цвет рамки */
+
+    /*
+        border: 4px solid red,
+                4px solid red,
+                4px solid red,
+                4px solid red;
+
+        Можно задать стиль разный для всех 4 сторон. Начиная с верхней и по 
+        часовой стрелке.
+
+        border-width: 4px 5px 6px 7px;
+        border-style: solid solid dotted dashed;
+        border-color: red blue green black;
+    */
+
+    border-radius: 20px;
+    /* Принимает px \ % от длины стороны */
+
+    border-radius: 10px 20px 30px 40px;
+
+    /* Начиная с левого верхнего и по часовой стрелке */
+
+    border-radius: 50% 40% 50% 50%;
+
+    border-top-left-radius: 40px;
+
+    border-radius: 30px/60px;
+
+    /*
+        border-top-right-radius
+        border-bottom-left-radius
+        border-bottom-right-radius
+    */
+
+
+    /* Тень для блока */
+
+    -webkit-box-shadow: -6px -8px 13px 0px rgba(255, 50, 50, 1);
+    -moz-box-shadow:    -6px -8px 13px 0px rgba(255, 50, 50, 1);
+    box-shadow:         -6px -8px 13px 0px rgba(255, 50, 50, 1);
+
+    /*
+        смещение_по_ширине смещение_по_высоте радиус_размытия растяжение цвет
+
+        box-shadow: inset -6px -8px 13px 1px rgba(255, 50, 50, 1);
+        inset включает внутреннюю тень
+
+        Можно задавать через запятую сразу 2 тени, но одна из них должна быть 
+        inset
+        box-shadow: inset -6px -8px 13px 1px rgba(255, 50, 50, 1),
+        -6px -8px 13px 1px rgba(255, 50, 50, 1);
+    */
+
+    /* Тень для текста */
+
+    text-shadow: 5px 4px 0px rgba(0, 150, 150, 1);
+
+    /*
+        смещение_по_ширине смещение_по_высоте радиус_размытия цвет
+    */
+}
+
+
+.size{
+    background: red;
+    height: 200px;
+
+    min-width: 400px; /* не может быть меньше 400px */
+    max-width: 700px; /* не может быть больше 700px */
+
+    min-height: 300px; /* Не может быть меньше 300px в высоту*/
+    max-height: 700px; /* Не модет быть больше 700px в высоту*/
+}
+
+/* Псевдоэлементы */
+
+.size::first-letter{
+    font-size: 40px;
+}
+/*
+    применим только к блочным элементам
+*/
+
+.size::first-line{
+    text-decoration: underline;
+}
+/*
+    применим только к блочным элементам
+*/
+
+.size::before{
+    content: 'ПРИВЕТ'; /* Обязательное свойство!!! Нужно хотябы объявить пустым */
+
+    /* В content можно передать текст или изображение через url() */
+}
+
+.size::after{
+    content: 'ПОКА';
+}
+
+
+/*
+    before добавляет элемент в начало контента внутри блока, а after в конец
+
+
+    color: transparent;  - прозрачный цвет
+*/
+
+
+/*
+    vertical-align - выравнивание по вертикали текста
+    работает в ячейке таблицы для выравнивания текста
+    к верху top \ к низу bottom \ центрирует middle
+*/
+

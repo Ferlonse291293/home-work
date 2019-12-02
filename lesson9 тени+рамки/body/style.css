@@ -1,0 +1,32 @@
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.main-content{
+    min-height: 1000px;
+    background: red;
+    float: left;
+    width: calc(100% - 320px);
+}
+
+.left-panel{
+    background: purple;
+
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+#header{
+    background: blue;
+}
+
+#footer{
+    background: blue;
+}
+

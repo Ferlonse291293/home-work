@@ -1,0 +1,30 @@
+body{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+
+.box{
+    width: 600px;
+    height: 600px;
+    background: red;
+}
+
+@media (max-width: 700px){
+    .box{
+        width: 400px;
+        background: blue;
+    }
+}
+
+@media (max-width: 500px){
+    .box{
+        width: 280px;
+        background: purple;
+    }
+}
+
+@media print {
+
+}
+

@@ -1,0 +1,41 @@
+.clear{
+    clear: both; /* left right none */
+}
+
+.calendar{
+    width: 350px;
+    background: gray;
+}
+
+.calendar-title{
+    text-align: center;
+    padding: 30px 0;
+    background: red;
+}
+
+.calendar-week{
+    background: blue;
+}
+
+.calendar-week-item{
+    float: left;
+    width: 50px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.calendar-day{
+    float: left;
+    width: 50px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.calendar-day.dayoff{
+    color: red;
+}
+
+.calendar-day.current{
+    color: blue;
+    background: white;
+}
